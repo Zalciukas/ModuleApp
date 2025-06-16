@@ -1,0 +1,136 @@
+/* Custom styles for AUPU */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.jumbotron .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border: 0;
+    margin-bottom: 1.5rem;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.table {
+    background-color: white;
+}
+
+.table th {
+    border-top: none;
+    font-weight: 600;
+}
+
+.badge {
+    font-size: 0.8em;
+}
+
+.btn-group-sm > .btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.775rem;
+}
+
+/* Responsive table improvements */
+@media (max-width: 768px) {
+    .table-responsive table,
+    .table-responsive thead,
+    .table-responsive tbody,
+    .table-responsive th,
+    .table-responsive td,
+    .table-responsive tr {
+        display: block;
+    }
+    
+    .table-responsive thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .table-responsive tr {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .table-responsive td {
+        border: none;
+        position: relative;
+        padding-left: 50% !important;
+        text-align: right;
+    }
+    
+    .table-responsive td:before {
+        content: attr(data-label) ": ";
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+/* Form improvements */
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+.btn-primary {
+    background-color: #667eea;
+    border-color: #667eea;
+}
+
+.btn-primary:hover {
+    background-color: #5a6fd8;
+    border-color: #5a6fd8;
+}
+
+/* Alert improvements */
+.alert {
+    border: 0;
+    border-radius: 0.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+/* Loading states */
+.btn:disabled {
+    opacity: 0.6;
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    footer {
+        display: none !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+    }
+}
